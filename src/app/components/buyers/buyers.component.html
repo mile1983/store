@@ -1,0 +1,7 @@
+<h1>Buyers</h1>
+<ul *ngFor="let buyer of buyers">
+  <li>
+    {{buyer.firstName}} {{buyer.lastName}}
+    <button class='btn btn-danger' (click)="removeBuyer(buyer)">Remove</button>
+  </li>
+</ul>
